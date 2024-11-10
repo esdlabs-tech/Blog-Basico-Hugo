@@ -1,0 +1,5 @@
+baseURL = 'https://esdlabshugo.org/'
+languageCode = 'es'
+title = 'ESD Labs en HUGO'
+theme = 'ananke'
+

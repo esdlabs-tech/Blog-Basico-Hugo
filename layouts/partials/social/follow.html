@@ -1,0 +1,12 @@
+{{ with .Site.Params.ananke_socials }}
+<div class="ananke-socials">
+  {{ range . }}
+    {{ $icon := printf "social/%s.html" .name }}
+    {{ if templates.Exists ( printf "partials/%s" $icon ) }}
+    <a class="link dim dib h2 w2 mr3" href="{{ .url }}" title="{{ .label }}" target="_blank" rel="noopener">
+      {{ partial $icon . }}
+    </a>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

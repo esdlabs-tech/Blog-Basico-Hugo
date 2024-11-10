@@ -1,0 +1,37 @@
+title = "ESD Labs en HUGO"
+baseURL = "https://gohugo-theme-ananke.pages.dev"
+languageCode = "en-us"
+theme = "ananke"
+resourceDir = "resources"
+
+# Configuración de idiomas
+DefaultContentLanguage = "es"
+[languages]
+  [languages.es]
+    title = "ESD Labs Es"
+    weight = 1
+    contentDir = "content/es"
+  [languages.en]
+    title = "ESD Labs"
+    weight = 2
+    contentDir = "content/en"
+
+# Parámetros generales
+[params]
+  author = "ESD Labs"
+  site_logo = "/images/ESD.png"
+  favicon = "/images/ESD.png"
+  description = "ESD Labs en HUGO"
+  background_color_class = "bg-dark-green"
+  recent_posts_number = 3
+
+# Social Media Links
+[[params.ananke_socials]]
+  name = "twitter"
+  url = "https://twitter.com/dev_edus"
+  label = "Twitter"
+
+[[params.ananke_socials]]
+  name = "github"
+  url = "https://github.com/esdlabs-tech"
+  label = "GitHub"
